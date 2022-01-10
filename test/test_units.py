@@ -24,11 +24,11 @@ def run(data):
 @pytest.mark.parametrize(
     ("start", "end"),
     [
-        # (None, None),
+        (None, None),
         (START, END),
     ],
     ids=[
-        # "auto",
+        "auto",
         "manual",
     ],
 )

@@ -14,6 +14,6 @@ def factory(table: str) -> AdsInsightsPipeline:
 def run(pipeline: AdsInsightsPipeline, request_data: dict) -> dict:
     return pipeline(
         request_data["ads_account_id"],
-        request_data["start"],
-        request_data["end"],
+        request_data.get("start"),
+        request_data.get("end"),
     )
